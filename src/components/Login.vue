@@ -15,6 +15,7 @@
 
 <script>
 export default {
+    name: 'LoginComponent', // Change the component name
     data() {
         return {
             username: '',
