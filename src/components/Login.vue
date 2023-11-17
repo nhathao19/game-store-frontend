@@ -10,6 +10,7 @@
 
             <button type="submit">Login</button>
         </form>
+        <router-link to="/register">Don't have an account? Register here.</router-link>
     </div>
 </template>
 

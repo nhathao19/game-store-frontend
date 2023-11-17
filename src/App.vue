@@ -3,7 +3,9 @@
     <h1>Game Store</h1>
     <router-link to="/">Home</router-link>
     <router-link to="/login">Login</router-link>
-
+    <router-link v-if="!user" to="/register">Register</router-link>
+    <router-link v-if="user" @click="logout">Logout</router-link>
+    
     <router-view />
     <ul>
       <li v-for="game in games" :key="game.id">{{ game.title }} - {{ game.price }}$</li>
