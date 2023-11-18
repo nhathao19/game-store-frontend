@@ -4,7 +4,8 @@ import Login from '@/views/Login.vue';
 import Register from '@/views/Register.vue';
 import GameList from '@/views/GameList.vue';
 import GameDetail from '@/views/GameDetail.vue';
-import Cart from '@/views/Cart.vue'; // Thêm import
+import Cart from '@/views/Cart.vue';
+import UserProfile from '@/views/UserProfile.vue';
 
 const routes = [
   { path: '/', component: Home },
@@ -12,7 +13,8 @@ const routes = [
   { path: '/register', component: Register },
   { path: '/games', component: GameList },
   { path: '/games/:id', component: GameDetail },
-  { path: '/cart', component: Cart }, // Thêm route mới
+  { path: '/cart', component: Cart },
+  { path: '/profile', component: UserProfile },
 ];
 
 const router = createRouter({
