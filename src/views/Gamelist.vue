@@ -3,13 +3,16 @@
         <h2>Game List</h2>
         <ul>
             <li v-for="game in games" :key="game.id">
-                <h3>{{ game.title }}</h3>
+                <router-link :to="{ name: 'GameDetail', params: { id: game.id } }">
+                    <h3>{{ game.title }}</h3>
+                </router-link>
                 <p>{{ game.description }}</p>
                 <p>Price: {{ game.price }}$</p>
             </li>
         </ul>
     </div>
 </template>
+
 
 <script>
 export default {

@@ -6,6 +6,7 @@
     <router-link v-if="!user" to="/register">Register</router-link>
     <router-link v-if="user" @click="logout">Logout</router-link>
     <router-link to="/games">Game List</router-link>
+    <router-link to="/cart">Shopping Cart</router-link>
 
     <router-view />
     <ul>
