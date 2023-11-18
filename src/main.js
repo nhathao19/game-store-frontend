@@ -61,6 +61,7 @@ const router = createRouter({
     { path: '/', component: App },
     { path: '/login', component: () => import('./components/Login.vue') },
     { path: '/register', component: () => import('./components/Register.vue') },
+    { path: '/games', component: () => import('./components/GameList.vue') },
   ],
     // Thêm các route cần thiết, ví dụ: đăng nhập, đăng xuất
 });
