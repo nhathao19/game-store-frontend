@@ -5,7 +5,7 @@
     <router-link to="/login">Login</router-link>
     <router-link v-if="!user" to="/register">Register</router-link>
     <router-link v-if="user" @click="logout">Logout</router-link>
-    <router-link to="/games">Game List</router-link> <!-- Thêm link đến trang danh sách game -->
+    <router-link to="/games">Game List</router-link>
 
     <router-view />
     <ul>
